@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -7,7 +11,30 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.ant-select-dropdown {
+  padding: 0;
+
+  background-color: #313131;
+  border-radius: unset;
+}
+
+.ant-select-dropdown .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+  background-color: transparent;
+}
+
+.ant-select-dropdown .ant-select-item {
+  min-height: auto;
+  padding: 0;
+
+  color: #FFFFFF;
+
+  border-radius: unset;
+}
+
+.ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+  
+  font-weight: normal;
+  color: #FFFFFF;
+
+  background-color: #217346;
 }
