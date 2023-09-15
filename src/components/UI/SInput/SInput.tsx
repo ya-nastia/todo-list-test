@@ -13,6 +13,11 @@ const SInput = styled.input`
     &::placeholder {
         color: ${({theme}) => theme.fontColor};
     }
+
+    &:focus {
+        outline: none;
+        border: 2px solid ${({theme}) => theme.greenColor};
+    }
 `;
 
 export default SInput;

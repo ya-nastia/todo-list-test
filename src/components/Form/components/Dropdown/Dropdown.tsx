@@ -5,11 +5,12 @@ import { ReactComponent as ArrowDownIcon } from '../../../../assets/img/arrow-do
 import { useAppContext } from '../../../../App';
 
 const Dropdown: React.FC = () => {
-    const { handleIsSubscribedChange } = useAppContext();
+    const { isSubscribed, handleIsSubscribedChange } = useAppContext();
     return (
         <S.InputContainer>
             <Select
-                defaultValue="Subscribed"
+                defaultValue={isSubscribed}
+                value={isSubscribed}
                 onChange={handleIsSubscribedChange}
                 suffixIcon={<ArrowDownIcon />}
                 options={[

@@ -8,6 +8,12 @@ export const InputContainer = styled.div`
         width: 100%;
     }
 
+    &&& .ant-select-focused.ant-select .ant-select-selector,
+    &&& .ant-select:hover .ant-select-selector {
+        border-color: ${({theme}) => theme.greenColor};
+        box-shadow: none;
+    }
+
     && .ant-select-selector {
         height: auto;
         padding: 14px;
